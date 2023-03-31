@@ -53,8 +53,6 @@ public class Main {
 
                 //Kollar om respons lyckas
                 if ("200".equals(serverResponse.get("httpStatusCode").toString())) {
-                    //TODO Kolla vad som har returnerats
-
 
                     //Bygger upp ett JSONObject av den returnerade datan
                     JSONObject data = (JSONObject) parser.parse((String) serverResponse.get("data"));
